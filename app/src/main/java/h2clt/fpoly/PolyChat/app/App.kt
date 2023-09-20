@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import com.yourcompany.android.jetpackcompose.router.Router
 import com.yourcompany.android.jetpackcompose.router.Screen
 import h2clt.fpoly.PolyChat.screens.LoginScreen
+import h2clt.fpoly.PolyChat.screens.MyScreen
 import h2clt.fpoly.PolyChat.ui.theme.Purple80
 
 
@@ -19,6 +20,7 @@ fun App() {
     Crossfade(targetState = Router.currentScreen, label = "") { screenState ->
       when (screenState.value) {
         is Screen.LoginScreen -> LoginScreen()
+        is Screen.MyScreen -> MyScreen()
 
 
         else -> {}

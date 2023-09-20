@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">PolyChat</string>
+    <string name="gioi_thieu">Kênh chat thú vị dành cho sinh viên Fpoly</string>
+    <string name="gioi_thieu2">Các kênh chat thú vị dành cho các bạn!</string>
+    <string name="gioi_thieu3">Chat với người lạ</string>
+    <string name="gioi_thieu4">Chat với Admin của PolyChat</string>
+    <string name="gioi_thieu5">Bạn bè trên kênh chat</string>
+    <string name="admin">Admin PolyChat</string>
+    <string name="mieu_ta">Trò chuyện thật thú vị!</string>
+    <string name="cong_dong">Kênh cộng đồng</string>
+    <string name="cntt">Kênh CNTT</string>
+    <string name="marketing">Kênh Marketing</string>
+    <string name="tkdh">Kênh TĐĐH</string>
+    <string name="logistic">Kênh Logistic</string>
+    <string name="tu_dong_hoa">Kênh Tự động hóa</string>
+    <string name="chinh_sua">Chỉnh sửa</string>
+    <string name="nguoi_la">Người lạ</string>
+    <string name="tin_nhan">Tin nhắn</string>
+    <string name="gop_y">Góp ý</string>
+    <string name="loi_gop_y">Vui lòng để lại góp ý tại đây để chúng tôi có thể cải thiện ứng dụng và phục vụ bạn tốt hơn.</string>
+    <string name="gui">Gửi</string>
 </resources>
