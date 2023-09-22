@@ -1,6 +1,7 @@
 package h2clt.fpoly.PolyChat.screens
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -28,6 +29,8 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.ui.focus.onFocusChanged
+import androidx.compose.ui.focus.onFocusEvent
 import androidx.compose.ui.res.stringResource
 import h2clt.fpoly.PolyChat.R
 import h2clt.fpoly.PolyChat.ui.theme.PolyChatTheme
@@ -73,7 +76,7 @@ fun Feedback() {
 @Composable
 fun LongTextFieldDemo() {
     var text by rememberSaveable {
-        mutableStateOf("Nhập nội dung...")
+        mutableStateOf("")
     }
 
     Row(
@@ -84,11 +87,13 @@ fun LongTextFieldDemo() {
             .padding(10.dp)
     ) {
         Icon(Icons.Default.Edit, contentDescription = "", tint = Color.White,)
+
         BasicTextField(
             value = text,
             onValueChange = { newText ->
                 text = newText
             },
+
             modifier = Modifier
                 .fillMaxWidth()
                 .fillMaxHeight()

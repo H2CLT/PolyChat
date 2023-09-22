@@ -29,7 +29,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.plcoding.animatedcountercompose.MindScreenApp
 import com.plcoding.animatedcountercompose.loadingAnimation
-import com.yourcompany.android.jetpackcompose.router.Screen
+import h2clt.fpoly.PolyChat.router.Router
+import h2clt.fpoly.PolyChat.router.Screen
 import h2clt.fpoly.PolyChat.ui.theme.AnimatedCounterComposeTheme
 
 
@@ -71,13 +72,22 @@ fun MoveTextAnimation() {
                             style = MaterialTheme.typography.headlineLarge
                         )
                         ElevatedButton(
-                            onClick = { count++ },
+                            onClick =
+                            {
+                              count ++
+                               if (count == 3) {
+                                   Router.navigateTo(Screen.HomeScreen)
+                               }
+                            },
                             modifier = Modifier.width(130.dp),
                             colors = ButtonDefaults.buttonColors( Color(0xffEC194E)) // Đặt màu nền tại đây
                         ) {
                             Text(text = "Tiếp tục ", fontSize = 20.sp)
+
                         }
                         Spacer(modifier = Modifier.height(7.dp))
+
+                        }
                     }
                 }
 
@@ -87,4 +97,3 @@ fun MoveTextAnimation() {
             }
         }
     }
-}

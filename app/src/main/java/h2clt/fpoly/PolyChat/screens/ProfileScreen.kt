@@ -50,16 +50,7 @@ import androidx.compose.ui.unit.sp
 import h2clt.fpoly.PolyChat.R
 import h2clt.fpoly.PolyChat.ui.theme.PolyChatTheme
 
-class ProfileScreen : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            PolyChatTheme {
-                ProfileScreenView()
-            }
-        }
-    }
-}
+
 
 @Composable
 fun ProfileScreenView() {

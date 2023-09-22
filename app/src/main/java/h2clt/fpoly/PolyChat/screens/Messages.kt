@@ -129,18 +129,11 @@ fun HeadTitle(text:Int) {
     ) {
         Column(
             modifier = Modifier
-                .width(40.dp)
-                .height(55.dp)
-                .padding(start = 10.dp)
+                .padding(start = 0.dp)
             ,
             verticalArrangement = Arrangement.Center
 
         ) {
-            Icon(
-                Icons.Default.ArrowBack,
-                contentDescription = "",
-                tint = Color.White
-            )
         }
         Column(
             modifier = Modifier
@@ -152,7 +145,7 @@ fun HeadTitle(text:Int) {
         ) {
             Text(text = stringResource(id = text),
                 color = Color.White,
-                fontSize = 18.sp,
+                fontSize = 19.sp,
                 fontWeight = FontWeight.Bold,
             )
         }

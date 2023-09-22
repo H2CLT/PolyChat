@@ -130,12 +130,16 @@ fun HomeScreen() {
                 Column()// Padding thanh phan con ben trong column vao 24dp
                 {
                     //Tôi muốn sử dụng if else ở đây, hãy chỉ tôi
-                    if (seletedItemIndex === 0) {
-                        Stranger()
-                    } else if (seletedItemIndex === 1) {
-                        Messages()
-                    }else{
-                        Feedback()
+                    when (seletedItemIndex) {
+                        0 -> {
+                            Stranger()
+                        }
+                        1 -> {
+                            Messages()
+                        }
+                        else -> {
+                            Feedback()
+                        }
                     }
                 }
             }

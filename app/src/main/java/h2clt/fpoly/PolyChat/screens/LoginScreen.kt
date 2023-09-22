@@ -66,9 +66,7 @@ fun LoginScreen() {
             btnLogin()
         }
     }
-    BackButtonHandler {
-        Router.navigateTo(Screen.Navigation)
-    }
+
 
 }
 @Composable

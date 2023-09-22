@@ -31,6 +31,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import h2clt.fpoly.PolyChat.R
+import h2clt.fpoly.PolyChat.router.Router
+import h2clt.fpoly.PolyChat.router.Screen
 import h2clt.fpoly.PolyChat.ui.theme.PolyChatTheme
 @Composable
 fun Stranger() {
@@ -68,7 +70,7 @@ fun Head(){
             Text(
                 stringResource(R.string.app_name),
                 color = Color.White,
-                fontSize = 18.sp,
+                fontSize = 19.sp,
                 fontWeight = FontWeight.Bold,
             )
             Text(
@@ -236,7 +238,7 @@ fun User() {
                     .width(130.dp)
                     .height(30.dp)
                     .background(Color(0xFFEB194E), shape = RoundedCornerShape(10.dp))
-                    .clickable {}
+                    .clickable { Router.navigateTo(Screen.ProfileScreen)}
                 ,
                 horizontalArrangement = Arrangement.Center,
                 verticalAlignment = Alignment.CenterVertically

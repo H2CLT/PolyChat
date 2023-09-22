@@ -47,15 +47,9 @@ fun MindScreenApp(
         Pair("Lịch sự và tôn trọng 🔞","Hãy lịch sự và tôn trọng người lạ, những hành vi thiếu lịch sự và gạ tình sẽ bị cấm sử dụng ứng dụng"),
     )
 
-    var oldCount by remember {
-        mutableStateOf(count)
-    }
-    SideEffect {
-        oldCount = count
-    }
     Row(modifier = modifier) {
         AnimatedContent(
-            targetState = arrayValue[count],
+            targetState = arrayValue.getOrNull(count),
             transitionSpec = {
                 slideInHorizontally { it } with slideOutHorizontally{ -it }
             }, label = ""
@@ -67,23 +61,27 @@ fun MindScreenApp(
                         .height(88.dp))
                 {
 
-                    Text(
-                        text = char.first,
-                        style = style,
-//                                softWrap = false,
-                        color = Color(0xffBB0909),
-                        fontSize = 22.sp,
-                        fontWeight = FontWeight.Bold,
-                    )
+                    char?.first?.let {
+                        Text(
+                            text = it,
+                            style = style,
+                //                                softWrap = false,
+                            color = Color(0xffBB0909),
+                            fontSize = 22.sp,
+                            fontWeight = FontWeight.Bold,
+                        )
+                    }
                     Spacer(modifier = Modifier.height(10.dp))
 
-                    Text(
-                        text = char.second,
-//                                softWrap = false,
-                        color = Color(0xFF5E5B5B),
-                        fontSize = 15.sp,
-                        fontWeight = FontWeight.Normal,
-                    )
+                    if (char != null) {
+                        Text(
+                            text = char.second,
+                //                                softWrap = false,
+                            color = Color(0xFF5E5B5B),
+                            fontSize = 15.sp,
+                            fontWeight = FontWeight.Normal,
+                        )
+                    }
                 }
 
             }
