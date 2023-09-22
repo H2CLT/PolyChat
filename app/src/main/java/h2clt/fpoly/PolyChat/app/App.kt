@@ -12,6 +12,7 @@ import com.yourcompany.android.jetpackcompose.router.Screen
 import h2clt.fpoly.PolyChat.screens.HomeScreen
 import h2clt.fpoly.PolyChat.screens.LoginScreen
 import h2clt.fpoly.PolyChat.ui.theme.Purple80
+import thanhltph29166.fpt.baithi.test2.Screen.MoveTextAnimation
 
 
 @Composable
@@ -21,6 +22,9 @@ fun App() {
       when (screenState.value) {
         is Screen.LoginScreen -> LoginScreen()
         is Screen.HomeScreen -> HomeScreen()
+        is Screen.RemindUserScreen -> MoveTextAnimation()
+
+
         else -> {}
       }
     }
