@@ -1,5 +1,5 @@
 
-package h2clt.fpoly.PolyChat
+package h2clt.fpoly.PolyChat.router
 
 import androidx.activity.ComponentActivity
 import androidx.activity.OnBackPressedCallback
