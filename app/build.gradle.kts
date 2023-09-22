@@ -47,6 +47,7 @@ android {
 }
 
 dependencies {
+    ////animation
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
@@ -67,4 +68,8 @@ dependencies {
 
 
     implementation("com.airbnb.android:lottie-compose:6.1.0")
+    ////cuong
+    implementation("com.google.accompanist:accompanist-pager:0.21.0-beta")
+    implementation("com.google.accompanist:accompanist-pager-indicators:0.21.0-beta")
+    implementation("androidx.compose.foundation:foundation:1.0.4")
 }
