@@ -34,7 +34,7 @@ import h2clt.fpoly.PolyChat.ui.theme.PolyChatTheme
 
 
 @Composable
-fun Suggest() {
+fun Feedback() {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -123,6 +123,6 @@ fun ButtonSend() {
 @Composable
 fun GreetingPreviewSuggest() {
     PolyChatTheme {
-        Suggest()
+        Feedback()
     }
 }
