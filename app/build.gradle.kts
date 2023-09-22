@@ -65,4 +65,6 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     implementation ("com.google.accompanist:accompanist-pager:0.23.0")
 
+
+    implementation("com.airbnb.android:lottie-compose:6.1.0")
 }
