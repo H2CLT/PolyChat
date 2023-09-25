@@ -1,4 +1,4 @@
-package h2clt.fpoly.PolyChat.screens
+package h2clt.fpoly.chat.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -28,10 +28,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import h2clt.fpoly.PolyChat.R
-import h2clt.fpoly.PolyChat.router.BackButtonHandler
-import h2clt.fpoly.PolyChat.router.Router
-import h2clt.fpoly.PolyChat.router.Screen
+import h2clt.fpoly.chat.R
 
 //class LoginScreen : ComponentActivity(){
 //    override fun onCreate(savedInstanceState: Bundle?) {

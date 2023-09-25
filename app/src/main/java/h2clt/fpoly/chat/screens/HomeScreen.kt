@@ -1,4 +1,4 @@
-package h2clt.fpoly.PolyChat.screens
+package h2clt.fpoly.chat.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -27,8 +27,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.google.accompanist.pager.ExperimentalPagerApi
-import h2clt.fpoly.PolyChat.R
-import h2clt.fpoly.PolyChat.ui.theme.PolyChatTheme
+import h2clt.fpoly.chat.R
+import h2clt.fpoly.chat.ui.theme.PolyChatTheme
 
 
 data class BottomNavigationItem(

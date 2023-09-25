@@ -1,4 +1,4 @@
-package h2clt.fpoly.PolyChat
+package h2clt.fpoly.chat
 
 import org.junit.Test
 

@@ -1,7 +1,6 @@
-package h2clt.fpoly.PolyChat.screens
+package h2clt.fpoly.chat.screens
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -29,11 +28,9 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.ui.focus.onFocusChanged
-import androidx.compose.ui.focus.onFocusEvent
 import androidx.compose.ui.res.stringResource
-import h2clt.fpoly.PolyChat.R
-import h2clt.fpoly.PolyChat.ui.theme.PolyChatTheme
+import h2clt.fpoly.chat.R
+import h2clt.fpoly.chat.ui.theme.PolyChatTheme
 
 
 @Composable

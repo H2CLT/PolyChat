@@ -1,4 +1,4 @@
-package h2clt.fpoly.PolyChat.ui.theme
+package h2clt.fpoly.chat.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

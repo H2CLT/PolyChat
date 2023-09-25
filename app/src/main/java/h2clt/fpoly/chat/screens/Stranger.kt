@@ -1,4 +1,4 @@
-package h2clt.fpoly.PolyChat.screens
+package h2clt.fpoly.chat.screens
 
 import android.util.Log
 import androidx.compose.foundation.Image
@@ -30,10 +30,10 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import h2clt.fpoly.PolyChat.R
-import h2clt.fpoly.PolyChat.router.Router
-import h2clt.fpoly.PolyChat.router.Screen
-import h2clt.fpoly.PolyChat.ui.theme.PolyChatTheme
+import h2clt.fpoly.chat.R
+import h2clt.fpoly.chat.router.Router
+import h2clt.fpoly.chat.router.Screen
+import h2clt.fpoly.chat.ui.theme.PolyChatTheme
 @Composable
 fun Stranger() {
     Column(

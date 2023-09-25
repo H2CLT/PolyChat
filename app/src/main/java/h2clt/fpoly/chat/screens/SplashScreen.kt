@@ -1,4 +1,4 @@
-package h2clt.fpoly.PolyChat.screens
+package h2clt.fpoly.chat.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -24,10 +24,10 @@ import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.LottieConstants
 import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
-import h2clt.fpoly.PolyChat.R
-import h2clt.fpoly.PolyChat.router.Router
-import h2clt.fpoly.PolyChat.router.Screen
-import h2clt.fpoly.PolyChat.ui.theme.PolyChatTheme
+import h2clt.fpoly.chat.R
+import h2clt.fpoly.chat.router.Router
+import h2clt.fpoly.chat.router.Screen
+import h2clt.fpoly.chat.ui.theme.PolyChatTheme
 import java.util.Timer
 import kotlin.concurrent.schedule
 

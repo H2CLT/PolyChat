@@ -1,13 +1,12 @@
-package h2clt.fpoly.PolyChat
+package h2clt.fpoly.chat
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
-import h2clt.fpoly.PolyChat.app.App
-import h2clt.fpoly.PolyChat.router.BackButtonHandler
-import h2clt.fpoly.PolyChat.router.Router
-import h2clt.fpoly.PolyChat.router.Screen
+import h2clt.fpoly.chat.app.App
+import h2clt.fpoly.chat.router.BackButtonHandler
+import h2clt.fpoly.chat.router.Router
+import h2clt.fpoly.chat.router.Screen
 
 class MainActivity : ComponentActivity() {
 

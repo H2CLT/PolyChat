@@ -1,9 +1,6 @@
-package h2clt.fpoly.PolyChat.screens
+package h2clt.fpoly.chat.screens
 
-import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -47,8 +44,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import h2clt.fpoly.PolyChat.R
-import h2clt.fpoly.PolyChat.ui.theme.PolyChatTheme
+import h2clt.fpoly.chat.R
+import h2clt.fpoly.chat.ui.theme.PolyChatTheme
 
 
 

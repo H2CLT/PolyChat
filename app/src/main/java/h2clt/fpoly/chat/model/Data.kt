@@ -1,4 +1,4 @@
-package h2clt.fpoly.PolyChat.model
+package h2clt.fpoly.chat.model
 
 data class UserMessage(
     val image:Int,

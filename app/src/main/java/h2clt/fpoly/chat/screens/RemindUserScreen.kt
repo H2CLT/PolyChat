@@ -29,9 +29,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.plcoding.animatedcountercompose.MindScreenApp
 import com.plcoding.animatedcountercompose.loadingAnimation
-import h2clt.fpoly.PolyChat.router.Router
-import h2clt.fpoly.PolyChat.router.Screen
-import h2clt.fpoly.PolyChat.ui.theme.AnimatedCounterComposeTheme
+import h2clt.fpoly.chat.router.Router
+import h2clt.fpoly.chat.router.Screen
+import h2clt.fpoly.chat.ui.theme.AnimatedCounterComposeTheme
 
 
 @Composable

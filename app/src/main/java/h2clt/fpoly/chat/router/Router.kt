@@ -1,4 +1,4 @@
-package h2clt.fpoly.PolyChat.router
+package h2clt.fpoly.chat.router
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
@@ -14,7 +14,7 @@ sealed class Screen {
 }
 
 object Router {
- var currentScreen: MutableState<Screen> = mutableStateOf(Screen.HomeScreen)
+ var currentScreen: MutableState<Screen> = mutableStateOf(Screen.SplashScreen)
 
   fun navigateTo(destination: Screen) {
     currentScreen.value = destination
