@@ -317,10 +317,14 @@ fun TabBottomView() {
                     .padding(0.dp)
             ) {
                 IconButton(onClick = { /*TODO*/ }) {
-                    Image(painter = iconFab, contentDescription = "", Modifier.size(size))
+                    Image(painter = iconFab, contentDescription = "", Modifier.size(size), colorFilter = ColorFilter.tint(
+                        Color.Red
+                    ))
                 }
                 IconButton(onClick = { /*TODO*/ }) {
-                    Image(painter = iconPicture, contentDescription = "", Modifier.size(size))
+                    Image(painter = iconPicture, contentDescription = "", Modifier.size(size), colorFilter = ColorFilter.tint(
+                        Color.Red
+                    ))
                 }
             }
         } else {
@@ -349,7 +353,9 @@ fun TabBottomView() {
                 .fillMaxWidth()
         ) {
             IconButton(onClick = {} ) {
-                Image(painter = iconPaper, contentDescription = "", Modifier.size(size))
+                Image(painter = iconPaper, contentDescription = "", Modifier.size(size), colorFilter = ColorFilter.tint(
+                    Color.Red
+                ))
             }
         }
     }
