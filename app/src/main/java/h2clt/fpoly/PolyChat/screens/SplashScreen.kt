@@ -80,7 +80,7 @@ fun SplashActivity() {
 @Composable
 fun loadingAnimation() {
     val result: LottieCompositionResult =
-        rememberLottieComposition(spec = LottieCompositionSpec.RawRes(R.raw.loading))
+        rememberLottieComposition(spec = LottieCompositionSpec.RawRes(R.raw.loader))
     val progressAnnotation by animateLottieCompositionAsState(
         result.value,
         isPlaying = true,
@@ -89,7 +89,7 @@ fun loadingAnimation() {
     )
     LottieAnimation(
         composition = result.value, progress = { progressAnnotation }, modifier = Modifier
-            .size(250.dp)
+            .size(100.dp)
     )
 }
 

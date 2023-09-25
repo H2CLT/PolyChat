@@ -9,6 +9,7 @@ sealed class Screen {
     object RemindUserScreen : Screen()
    object HomeScreen : Screen()
     object ProfileScreen : Screen()
+    object PolyMessenger : Screen()
    object Buttons : Screen()
    object ProgressIndicator : Screen()
    object AlertDialog : Screen()
